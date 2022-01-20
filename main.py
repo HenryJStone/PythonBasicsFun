@@ -49,3 +49,18 @@ print(2 ** 5) # if multiple **, they evaluate right to left
 # need to import the math module to use it
 # (aside: a .py file AKA a module AKA script)
 print(math.pow(2, 5))
+
+# Getting User Input
+print("Enter your favorite number : ")
+favorite_number = input()
+print("Your favorite number is: ", favorite_number)
+print("Your favorite number doubled is: ", favorite_number * 2)
+print(type(favorite_number))
+print("hello" * 2)
+#problem solving: use print(type()) to check what type of values you are working with
+#we need to convert favorite_number which is a string, to an int or float
+favorite_number_int = int(favorite_number)
+print(favorite_number_int)
+print("Your favorite number doubled is: ", favorite_number_int * 2)
+
+
