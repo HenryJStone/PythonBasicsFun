@@ -11,6 +11,7 @@ line comment
 AKA a block comment
 """
 
+print("hello world")
 
 # VARIABLES
 x = 5 # read this is as "x is assigned 5" or "x stores 5"
@@ -50,17 +51,40 @@ print(2 ** 5) # if multiple **, they evaluate right to left
 # (aside: a .py file AKA a module AKA script)
 print(math.pow(2, 5))
 
-# Getting User Input
-print("Enter your favorite number : ")
-favorite_number = input()
-print("Your favorite number is: ", favorite_number)
-print("Your favorite number doubled is: ", favorite_number * 2)
-print(type(favorite_number))
-print("hello" * 2)
-#problem solving: use print(type()) to check what type of values you are working with
-#we need to convert favorite_number which is a string, to an int or float
-favorite_number_int = int(favorite_number)
-print(favorite_number_int)
-print("Your favorite number doubled is: ", favorite_number_int * 2)
+# GETTING USER INPUT
+# print("Enter your favorite number: ")
+# favorite_number = input()
+# print("Your favorite number is:", favorite_number)
+# print("Your favorite number doubled is:", favorite_number * 2, sep="*")
+# print(type(favorite_number))
+# print("hello" * 2, end="~~~~~~~") # sep and end are called keyword arguments
+# print("here")
+# # let's say, we really do want to double the favorite number
+# # we need to "convert" favorite_number the string to an int (or float)
+# # this is called type conversion and there are built-in functions to do this
+# favorite_number_int = int(favorite_number)
+# print(favorite_number_int, type(favorite_number_int))
+# print("Your favorite number doubled is:", favorite_number_int * 2)
 
+# FORMATTING (decimal numbers)
+# a few ways to do this
+# 1. C style (old skool)
+print(math.pi)
+# round math.pi to 2 decimal places
+print("%.2f" %(math.pi))
+# 2. Pythonic way (new skool)
+print("{:.2f}".format(math.pi))
+# 3. use the built-in function round()
+# round() actually rounds the number (and you could store it as such)
+print(round(math.pi, 2))
 
+# CONDITIONALS (aka if statements)
+# if some condition (AKA boolean condition) is true:
+#    then execute some code (AKA body)
+x = 7
+if x == 6: # note: == is the equality operator (= assignment operator)
+    print("x is 6")
+    # this the body
+    # the body only executes when the value stored in x is equal to 6
+    # i.e. the boolean condition evaluates to true
+    # note standard indentation is 1 tab = 4 spaces
