@@ -88,3 +88,106 @@ if x == 6: # note: == is the equality operator (= assignment operator)
     # the body only executes when the value stored in x is equal to 6
     # i.e. the boolean condition evaluates to true
     # note standard indentation is 1 tab = 4 spaces
+
+# we also have an else keyword
+# which executes when the preceding if condition is false
+if x == 6:
+    print("x is 6")
+else:
+    print("x is not 6")
+
+x = 5
+if x < 0:
+    print("x is negaitve")
+elif x > 0:
+    print("x is positive")
+else:
+    print("x is 0")
+
+# you can nest if statments
+
+#Loops
+# use a loop to repeat statments
+# there are for loops and while loops
+# for loop structure
+# for item in sequence:
+#   body (statments we want to repeat)
+
+# there are lots of sequences in python
+#lists are sequences
+my_list = [1, 2, 3, 4, 5]
+for item in my_list:
+    print(item)
+
+# strings are sequences
+for char in "gonzaga":
+    print(char, end="*")#end="*" overrides the new line call and replaces it with *
+
+# we can generate our own sequences
+# built-in function range() generates a sequence
+# range(9) gencerates a sequence [0, 9)
+for i in range(9):
+    print(i, end=" ")
+print()
+
+# range(stop) : [0, stop)
+# range(start, stop) : [start, stop)
+# range(start, stop, step) : [start, stop) by increment step
+
+for i in range(4, 9):
+    print(i, end=" ")
+print()
+
+for i in range(4, 9, 2):
+    print(i, end=" ")
+print()
+
+
+
+for i in range(8, 3, -2):
+    print(i, end=" ")
+print()
+
+for i in range(2, 40, 2):
+    print(i, end=", ")
+print(i + 2)
+
+# while loop structure
+# while some condition is true:
+#   body
+#   progress towards your condition being false, eg. incrementation
+
+#i = 2
+#while i <= 38:
+#    print(i, end=", ")
+#    i += 2
+#print(i)
+
+# loops can be nested
+# use the break keyword to get an early exit from a loop
+#while True:
+#    user_input = input("enter a word (stop to exit): ")
+#    if user_input == "stop":
+#        break
+
+
+# functions
+# a function is a named sequence of statements
+
+# examples of funtion calls: help(), print(), round(), etc...
+# functions take inputs (arguments in the call, parameters in the function header
+# functions produces outputs
+# fucntion structure
+# def function_name(parameter list):
+#   body
+
+# body dos not execute until the function is called
+
+# example 1: no parameters
+# no return value
+def say_hello():
+    print("hello")
+
+say_hello()
+
+# example 2: 
