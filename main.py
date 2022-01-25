@@ -1,5 +1,6 @@
 # best practice is to put all import statements at the top
 import math 
+import random
 
 # this is a one line comment
 # a comment is "code" that is ignored by Python
@@ -222,3 +223,21 @@ def area_and_circum(radius):
 
 result1, result2 = area_and_circum(5.0)
 print(result1, result2)
+
+
+# Random numbers
+# often we need a random number to simulate something or to
+# setup the initial state for an algoritm
+# import random module
+
+# often we want the same random number sequence each time
+# we run our program
+random.seed(1) # constant
+# 1. produces reproducible results
+# 2. debugging purposes
+
+# let's simulate rolling a 6-sided die
+die_roll = random.randint(1, 6) #[1, 6]
+print("die roll: ", die_roll)
+die_roll = random.randrange(1,7) # [1,7)
+print(die_roll)
