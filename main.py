@@ -189,5 +189,36 @@ def say_hello():
     print("hello")
 
 say_hello()
+for i in range(5):
+    say_hello()
+# example 2: one parameter and no return value
+def say(message):
+    print(message)
 
-# example 2: 
+say("hi there")
+
+# TASK: define/call a fucntion that accepts the radius of a circle
+# prints out the area of that circle
+
+def area_of_cir(radius):
+    area = math.pi * radius ** 2
+    print("area: ", area)
+
+area_of_cir(5)
+
+# example 3: one parameter and one return value
+def area_of_cir2(radius):
+    area = math.pi * radius ** 2
+    return area
+
+result = area_of_cir2(5.0)
+print("result: ", result)
+
+# example 4: one parameter and two return values
+def area_and_circum(radius):
+    area = math.pi * radius ** 2
+    circum = 2 * math.pi * radius
+    return area, circum
+
+result1, result2 = area_and_circum(5.0)
+print(result1, result2)
